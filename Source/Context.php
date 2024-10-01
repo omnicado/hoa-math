@@ -267,7 +267,7 @@ class Context
                 'pow'     => xcallable('pow'),
                 'rad2deg' => xcallable('rad2deg'),
                 'round'   => xcallable(function ($value, $precision = 0) {
-                    return round($value, $precision);
+                    return round($value, (int) $precision);
                 }),
                 'sin'     => xcallable('sin'),
                 'sqrt'    => xcallable('sqrt'),
